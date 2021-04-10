@@ -2,7 +2,9 @@ var readLineSync = require ('readline-sync')
 var inputValue= readLineSync.question('Please enter the numeric value b/w 0-9 to make an * design?');
  
  console.log('Thanks for the Input !!!! , Just one more thing to trouble you  ........');
- var designInput = readLineSync.question('Let me know which way you want your design ??   Normal or Inverted . Press N for normal and I for inverted ');
+ var designInput = readLineSync.question('Let me know which way you want your design ??   Normal or Inverted . Press N for normal and I for inverted ', {hideEchoBack:true});
+
+
 
 if(designInput== 'I' || designInput == 'i'){
   designInverted(inputValue);
